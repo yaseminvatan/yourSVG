@@ -36,4 +36,9 @@ function generateSVG(text, textColor, shape, shapeColor) {
       message: 'Enter text for the logo (up to 3 characters):',
       validate: input => input.length <= 3 || 'Text must be 3 characters or less.',
     },
+    {
+        type: 'input',
+        name: 'textColor',
+        message: 'Enter the text color (keyword or color code):',
+      },
 ])
