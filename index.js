@@ -28,4 +28,12 @@ function generateSVG(text, textColor, shape, shapeColor) {
     fs.writeFileSync('logo.svg', svgContent.trim());
     console.log('Generated logo.svg');
   }
-  
+  inquirer
+  .prompt([
+    {
+      type: 'input',
+      name: 'text',
+      message: 'Enter text for the logo (up to 3 characters):',
+      validate: input => input.length <= 3 || 'Text must be 3 characters or less.',
+    },
+])
