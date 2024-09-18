@@ -53,3 +53,7 @@ function generateSVG(text, textColor, shape, shapeColor) {
         message: 'Enter the shape color (keyword or hexadecimal):',
       },
 ])
+.then(answers => {
+    const { text, textColor, shape, shapeColor } = answers;
+    generateSVG(text, textColor, shape, shapeColor);
+  });
