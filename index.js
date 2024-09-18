@@ -41,4 +41,10 @@ function generateSVG(text, textColor, shape, shapeColor) {
         name: 'textColor',
         message: 'Enter the text color (keyword or color code):',
       },
+      {
+        type: 'list',
+        name: 'shape',
+        message: 'Choose a shape:',
+        choices: ['Circle', 'Triangle', 'Square'],
+      },
 ])
