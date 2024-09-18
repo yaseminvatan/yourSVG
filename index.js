@@ -47,4 +47,9 @@ function generateSVG(text, textColor, shape, shapeColor) {
         message: 'Choose a shape:',
         choices: ['Circle', 'Triangle', 'Square'],
       },
+      {
+        type: 'input',
+        name: 'shapeColor',
+        message: 'Enter the shape color (keyword or hexadecimal):',
+      },
 ])
